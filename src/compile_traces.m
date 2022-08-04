@@ -117,7 +117,6 @@ end
 %% %%%%%%%%%%%%%%%%%%%%% Set Path Specs, ID Vars %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 [liveProject, numExperiments, dataName, hasAPInfo, has3DSpotInfo, hasProteinInfo] = headerFunction(projectName);
-%hasProteinInfo = false;
 
 %% %%%%%%%%%%%%%%%%% Extract relevant processed data %%%%%%%%%%%%%%%%%%%%%%
 
