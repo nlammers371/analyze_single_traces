@@ -49,9 +49,9 @@ classdef LiveEnrichmentProject
             %liveProject Construct an instance of this class
             %   Detailed explanation goes here
             this.Project = Project;
-            [approvedPrefixes, dropboxFolder] = getProjectPrefixes(Project,'customApproved','ReadyForEnrichmentAnalysis');
+            [approvedPrefixes, dropboxFolder] = getProjectPrefixes(Project,'customApproved','ReadyForAnalysis');
             this.includedExperimentNames = string(approvedPrefixes); %NL: fiddled with this to make it specific to enrichment
-            this.ignoredExperimentNames = string( getProjectPrefixes(Project,'customApproved','ReadyForEnrichmentAnalysis','inverseFlag') ); 
+            this.ignoredExperimentNames = string( getProjectPrefixes(Project,'customApproved','ReadyForAnalysis','inverseFlag') ); 
             
             slashes = regexp(dropboxFolder,'/|\');
             this.dataPath = [dropboxFolder(1:slashes(end)) 'ProcessedEnrichmentData' filesep Project filesep];

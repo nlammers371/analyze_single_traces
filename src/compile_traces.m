@@ -81,7 +81,6 @@ minDP = 14;     % particles with fewer than minDP points will be flagged
 pctSparsity = 50;   %
 twoSpotFlag = contains(projectName, '2spot');
 minTime = 0*60; % take no fluorescence data prior to this point
-tresInterp = 20;
 tresInterpFloor = 20;
 calculatePSF = false;
 sequentialSamplingFlag = false;
