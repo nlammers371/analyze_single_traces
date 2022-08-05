@@ -1,3 +1,4 @@
 # Ignore ComputerFolders #
 ##########################
 ComputerFolders.csv
+run01_set_cpHMM_inference_options.m
