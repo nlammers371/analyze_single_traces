@@ -14,13 +14,13 @@ inferenceInfo.projectNameCell = {'MSE-WT','NSv1','Rand1','Rand4'}; % {'2xDl-Ven_
 % set inference options
 inferenceInfo.ProteinBinFlag = 0;
 inferenceInfo.FluoBinFlag = 0;
-inferenceInfo.timeBins = {[0 40*60]}; % should be >= than 15min
-inferenceInfo.apBins = [];%linspace(-.2,.2,10);
+inferenceInfo.timeBins = {[0 40*60]}; % cell array containing 1x2 vectors with max and min time in seconds
+inferenceInfo.apBins = [];% array of ap bins to use for inference
 
 % set core model specs
 inferenceInfo.modelSpecs.nStates = 2; % number of states in system
-inferenceInfo.modelSpecs.nSteps = 7; % number of steps to traverse gene
-inferenceInfo.modelSpecs.alphaFrac =  1302/6444;%1275 / 4670;%
+inferenceInfo.modelSpecs.nSteps = 4; % number of steps required to traverse gene
+inferenceInfo.modelSpecs.alphaFrac =  1302/6444; % fraction of total gene length taken upo by MS2 casset
 
 % other info
 inferenceInfo.AdditionalGroupingVariable = '';%'Stripe'
