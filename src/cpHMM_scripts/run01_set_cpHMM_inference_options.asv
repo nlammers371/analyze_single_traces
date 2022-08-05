@@ -13,7 +13,7 @@ inferenceInfo.projectNameCell = {'Bcd-GFP-McpMcherry-hbP2P-d6'}; % {'2xDl-Ven_hb
 
 % set inference options
 inferenceInfo.ProteinBinFlag = 0; % Group by input protein concentration?
-inferenceInfo.FluoBinFlag = 0; % Group according to MS2 trace intensity?
+inferenceInfo.FluoBinFlag = 0; % Group ac
 inferenceInfo.timeBins = {[0 40*60]}; % cell array containing 1x2 vectors with max and min time in seconds
 inferenceInfo.apBins = [];% array of ap bins to use for inference
 

@@ -6,3 +6,4 @@ TestPath,P:\Nick\LivemRNA\ExpectedData
 SourcePath,P:\Nick\LivemRNA\Data\RawDynamicsData
 PreProcPath,P:\Nick\LivemRNA\Data\PreProcessedData
 FISHPath,P:\Nick\LivemRNAData\ProcessedData
+DataRoot,P:\Nick\LivemRNA\Data\
